@@ -36,10 +36,16 @@ button:active {
 	top:1px;
 }
 
+h1 {
+    font-size: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: midnightblue; 
+}
+
 .timer {
     text-align: center;
-    height: 250px;
-    width: 400px;
+    height: 300px;
+    width: 450px;
     border-style: double;
     border-width: 10px;
     border-color: #276873;
@@ -47,8 +53,8 @@ button:active {
 
 .name {
     text-align: center;
-    height: 250px;
-    width: 400px;
+    height: 270px;
+    width: 450px;
     border-style: groove;
     border-width: 10px;
     border-color: #276873;
