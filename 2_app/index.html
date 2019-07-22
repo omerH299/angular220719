@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myTimerApp">
+<head>
+    <title>Clock!</title>
+    <script src="angular.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="timectrl.js"></script>
+    <script src="namectrl.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+
+    <div class="timer" ng-controller="timeCtrl">
+            <h1>Clock</h1>
+            <h1>{{time}}</h1>
+            <button ng-click="showUpdatedTime()">Click to increase time</button>
+    </div>
+    <br><br><br><br>
+    <div class="name" ng-controller="nameCtrl">
+            <h1>NAME</h1>
+            <h1>{{name}}</h1>
+        <button ng-click="reverseName()">Click to reverse the name</button>
+    </div>
+</body>
+</html>
