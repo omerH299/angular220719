@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="dataApp">
+<head>
+    <title>Person Form!</title>
+    <script src="angular.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="formCtrl.js"></script>
+</head>
+<body >
+
+    <div ng-controller="formCtrl">
+            <h1>Person Form</h1>
+            <p>Name : <input type="text" ng-model="person.name" placeholder="Enter your name"/></p>
+            <p>Age  : <input type="number" id="age" ng-model="person.age" placeholder="Enter your age"/></p>
+            <p>Password : <input type="password" id="password" ng-model="person.password" placeholder="Enter your password"/></p>
+            <input type="radio" name="gender" value="male" ng-model="person.gender"> Male<br>
+            <input type="radio" name="gender" value="female" ng-model="person.gender"> Female<br>
+            <input type="radio" name="gender" value="other" ng-model="person.gender"> Other
+            <br><br>
+        <select id="car" ng-model="person.car">
+        <option value="volvo">Volvo</option>
+        <option value="Mitsubishi">Mitsubishi</option>
+        <option value="Honda">Honda</option>
+        <option value="Ford">Ford</option>
+        </select>
+        <br> <br> 
+        <input type="checkbox" id="bike" name="vehicle1" value="Bike" ng-model="person.bike"> I have a bike<br>
+            <h1>Person = {{person | json}}</h1>
+    </div>
+    <br>
+</body>
+</html>
